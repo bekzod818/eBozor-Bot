@@ -102,7 +102,7 @@ async def items_keyboard(category, subcategory):
     items = await db.get_products(category, subcategory)
     for item in items:
         # Tugma matnini yasaymiz
-        button_text = f"{item['productname']} - ${item['price']}"
+        button_text = f"{item['product_name']} - ${item['price']}"
 
         # Tugma bosganda qaytuvchi callbackni yasaymiz: Keyingi bosqich +1 va kategoriyalar
         callback_data = make_callback_data(

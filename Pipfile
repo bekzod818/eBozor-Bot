@@ -7,6 +7,8 @@ name = "pypi"
 aiogram = "~=2.14"
 environs = "~=8.0.0"
 asyncpg = "*"
+django = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
