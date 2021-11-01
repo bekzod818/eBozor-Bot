@@ -24,6 +24,7 @@ async def bot_start(message: types.Message):
     )
 
     # ADMINGA xabar beramiz
-    # count = await db.count_users()
-    # msg = f"{user[1]} bazaga qo'shildi.\nBazada {count} ta foydalanuvchi bor."
-    # await bot.send_message(chat_id=ADMINS[0], text=msg)
+    count = await db.count_users()
+    msg = f"{user[1]} bazaga qo'shildi.\nBazada {count} ta foydalanuvchi bor."
+    # print(user[2]) get_username
+    await bot.send_message(chat_id=ADMINS[0], text=msg)

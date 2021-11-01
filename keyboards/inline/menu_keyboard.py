@@ -133,7 +133,7 @@ def item_keyboard(category, subcategory, item_id):
     markup = InlineKeyboardMarkup(row_width=1)
     markup.row(
         InlineKeyboardButton(
-            text=f"🛒 Xarid qilish", callback_data=buy_item.new(item_id=item_id)
+            text=f"🛒 Xarid qilish", callback_data="xarid"
         )
     )
     markup.row(
